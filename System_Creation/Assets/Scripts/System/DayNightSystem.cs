@@ -25,7 +25,7 @@ public class DayNightSystem : MonoBehaviour
         currentTime += 1 * Time.deltaTime;
         translateTime = (currentTime / (midday * 2));
 
-        float t = translateTime * 24f;
+        float t = translateTime * 12f;
 
         float hours = Mathf.Floor(t);
 
