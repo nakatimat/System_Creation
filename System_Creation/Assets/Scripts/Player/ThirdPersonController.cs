@@ -35,7 +35,7 @@ public class ThirdPersonController : MonoBehaviour
     void Update()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");        
+        float vertical = Input.GetAxisRaw("Vertical");
 
         HandleMovementsAndRotation(horizontal, vertical);
         HandleGravity();
@@ -59,7 +59,7 @@ public class ThirdPersonController : MonoBehaviour
         }
     }
 
-    void WalkOrRunningSpeed() 
+    void WalkOrRunningSpeed()
     {
         if (_playerAnim.IsRunning && _speed < _maxSpeed) 
         {
