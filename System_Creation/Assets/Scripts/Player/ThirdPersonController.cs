@@ -8,12 +8,12 @@ public class ThirdPersonController : MonoBehaviour
     private PlayerAnimationController _playerAnim;
         
     public Transform cam;
-    public float speed = 6f;
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
 
+    [SerializeField]
     private float _speed = 1f;
-    private float _maxSpeed = 2f;
+    private float _maxSpeed = 20f;
     private float _minSpeed = 1f;
     private float _acceleration = 4f;
     private float _desaceleration = 4f;
@@ -55,7 +55,7 @@ public class ThirdPersonController : MonoBehaviour
 
             WalkOrRunningSpeed();
 
-            controller.Move(moveDir.normalized * speed * Time.deltaTime);
+            controller.Move(moveDir.normalized * _speed * Time.deltaTime);
         }
     }
 
