@@ -13,7 +13,7 @@ public class ThirdPersonController : MonoBehaviour
 
     [SerializeField]
     private float _speed = 1f;
-    private float _maxSpeed = 20f;
+    private float _maxSpeed = 5f;
     private float _minSpeed = 1f;
     private float _acceleration = 4f;
     private float _desaceleration = 4f;
